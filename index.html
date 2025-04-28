@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    text-align: center;
+    background-image: url('KosBg.png');
+    background-position: center;
+  }
+  p {
+    text-align: center;
+    height: 200px;
+    font-size: 50px;
+    color: green;
+  }
+  button {
+    font-size: 30px;
+  }
+  
+  img {
+    
+    height: 150px;
+    width: 150px;
+    animation: blink 1s;
+    
+    @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+    
+    
+    
+  }
+ 
+  }
+</style>
+</head>
+<body>
+ <link id="stylesheet" src="style.css">
+<h1><p id="counter">0</p></h1>
+<img id="img" src="btn_id_Kos.png">
+
+<script>
+  const img = document.getElementById('img');
+  const counter = document.getElementById('counter');
+  let count = 0;
+
+  img.addEventListener('click', () => {
+    count++;
+    counter.textContent = count;
+  });
+
+
+</script>
+    
+</body>
+</html>
